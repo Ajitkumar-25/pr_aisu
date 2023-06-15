@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    margin:0;
+    font-family: "Inter", sans-serif;
+    }
+    nav {
+      background:transparent;
+      color: #fff;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    
+    .logo img {
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+      height: 70px;
+      margin-left: 8px;
+    }
+    
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+    
+    .nav-links li {
+      margin: 20px;
+      font-size: larger;
+    }
+    
+    .nav-links a {
+      color: red;
+      text-decoration: none;
+    }
+    
+    .burger {
+      display: none;
+      cursor: pointer;
+    }
+    
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background-color:red;
+      margin: 5px;
+    }
+    .responsiveimg{
+      width: 100%;
+      height:auto;
+    }
+    
+    @media screen and (max-width: 895px) {
+      .nav-links {
+        display: none;
+      }
+    
+      .burger {
+        display: block;
+      }
+    
+      .nav-active {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        
+      }
+    }
+
+
+    .imgresponsive{
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: auto;
+        padding: 30px;
+        border: 2px solid black;
+        border-radius: 9px;
+         margin-top:80px; 
+         margin-bottom: 80px;
+      }
+  
+      .container h2 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+  
+      .container input[type=text], .container input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 15px 0;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+  
+      .container .fa {
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 10px;
+      }
+  
+      .container input[type=text] + .fa,
+      .container input[type=password] + .fa {
+        color: #aaa;
+      }
+  
+      .container button {
+        background-color: orange;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        font-size: larger;
+      }
+  
+      .container button:hover {
+        opacity: 0.8;
+      }
+  
+      @media screen and (max-width: 480px) {
+        .container {
+          max-width: 300px;
+        }
+      }
+
+
+    
+
+      .footer{
+        background:#191919;
+        padding:4px 0px;
+        font-family: 'Play', sans-serif;
+        text-align:center;
+        font-weight: bolder;
+        }
+        
+        .footer .row{
+        width:100%;
+        margin:0% 0%;
+        padding:0.6% 0%;
+        color:white;
+        font-size:0.8em;
+        }
+        
+        .footer .row a{
+        text-decoration:none;
+        color:white;
+        transition:0.5s;
+        }
+        
+        .footer .row a:hover{
+        color:white;
+        }
+        
+        .footer .row ul{
+        width:100%;
+            }
+        
+        .footer .row ul li{
+        display:inline-block;
+        margin:15px 15px;
+        font-size: large;
+        }
+        
+        .footer .row a i{
+        font-size:2em;
+        margin:0% 1%;
+        }
+
+        ion-icon {
+            font-size: 30px; 
+        }
+        
+        @media (max-width:720px){
+        .footer{
+        text-align:center;
+        padding:5%;
+        }
+        .footer .row ul li{
+        display:block;
+        margin:10px 0px;
+        margin:0% 3%;
+        text-align:center;
+        }
+        .footer .row a i{
+        margin:0% 3%;
+        }
+        }
