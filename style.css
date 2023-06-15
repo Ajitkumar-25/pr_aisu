@@ -95,7 +95,20 @@
 
 
 
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.button {
+    padding: 10px 20px;
+    background-color:#0d6efd;; ;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 
 
