@@ -95,21 +95,24 @@
 
 
 
-  .btn {
+  .btnn {
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+   
 }
 
-.button {
+.lastbtn{
     padding: 10px 15px;
     background-color:#0d6efd;; ;
     color: white;
     font-size: 15px;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 7px;
     font-weight: bold;
+    
 }
+
+
 
 
 
@@ -177,8 +180,7 @@
   }
   
   .card-button {
-    
-    padding: 7px 10px;
+  padding: 7px 10px;
     background-color:#0d6efd;;
     color:white;
     border: 1px solid white;
@@ -186,8 +188,24 @@
     cursor: pointer;
     margin-top: 5px;
     width: 15%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   }
 
   a {
     font-size: 30px;
   }
+
+  @media screen and (max-width: 936px) {
+.card-button {
+  padding: 7px 10px;
+  font-size: 14px;
+  width:20%
+}
+}
+  @media screen and (max-width: 460px) {
+    .card-button {
+      padding: 5px 8px;
+      font-size: 14px;
+      width:70%
+    }
+    }

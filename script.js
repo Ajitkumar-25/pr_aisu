@@ -2,7 +2,7 @@
 
 const backendData = [
     {
-      title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, odio!',
+      title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, odio! voluptatem doloremque quod amet!',
       date: '2023-06-14',
       time: '2:30 PM',
       category: 'Category 2',
@@ -30,7 +30,7 @@ const backendData = [
       description: 'Description for Card 6'
     },
     {
-      title: 'AISU, Students & Parents Demand Fairness and Accountability in JEE Examinations',
+      title: 'AISU, Students & Parents Demand Fairness and Accountability in JEE Examinations states many ',
       date: '2023-06-17',
       time: '12:00 PM',
       category: 'Category 7',
