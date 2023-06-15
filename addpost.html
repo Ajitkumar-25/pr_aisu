@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./addpost.css">
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js"></script>
+  </head>
+
+  <body>
+
+    <nav>
+      <div class="navbar">
+        <a href="#" class="logo"><img src="./assets/AISU.png" alt="images"></a>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Office bearer</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="#">Press Release</a></li>
+            <li><a href="#">Aisu in media</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Aisu Pamphlet</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </nav>
+      <img src="./assets/Screenshot 2023-06-10 214701.png" alt="" class="responsiveimg">
+
+    <div class="formbold-main-wrapper">
+      <div class="formbold-form-wrapper">
+        <h2>Add Post</h2>
+        
+        <form action="insert.php" method="POST">
+            <div class="formbold-input-flex">
+              <div>
+                  <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="Enter post Title here"
+                  class="formbold-form-input"
+                  />
+                  <label for="firstname" class="formbold-form-label"> Post Title </label>
+              </div>
+              <div>
+                  <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Enter post sub title here (if any)"
+                  class="formbold-form-input"
+                  />
+                  <label for="lastname" class="formbold-form-label"> Sub Title </label>
+              </div>
+            </div>
+    
+            <div class="formbold-input-flex">
+              <div>
+                <input
+                type="text"
+                name="category"
+                id="category"
+                placeholder="Enter post Category here"
+                class="formbold-form-input"
+                />
+                <label for="phone" class="formbold-form-label"> Category </label>
+            </div>
+
+              <div>
+                  <input
+                  type="datetime-local"
+                  name="date"
+                  id="date"
+                  placeholder="Enter post date"
+                  class="formbold-form-input"
+                  />
+                  <label for="email" class="formbold-form-label"> Date & Time </label>
+              </div>
+            </div>
+    
+            <div class="formbold-textarea">
+                <!-- <textarea
+                    rows="6"
+                    name="message"
+                    id="message"
+                    placeholder="Write About the post in detail..."
+                    class="formbold-form-input"
+                ></textarea> -->
+
+                <textarea name="message" id="message" class="formbold-form-input" >
+                  &lt;p&gt;This is some sample content.&lt;/p&gt;
+              </textarea>
+              <script>
+                ClassicEditor
+                    .create( document.querySelector( '#message' ) )
+                    .catch( error => {
+                        console.error( error );
+                    } );
+            </script>
+                <label for="message" class="formbold-form-label">Post Details </label>
+            </div>
+    
+            <div class="formbold-input-file"><h4>Upload files (optional)</h4>
+              <label for="file" class="formbold-input-label">
+                  <input type="file" name="upload" id="file">
+              </label>
+            </div>
+    
+            <button class="formbold-btn">
+                Save and Post
+            </button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+
+
+        <div class="row">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Office bearer</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="#">Press Release</a></li>
+            <li><a href="#">Aisu in media</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Aisu Pamphlet</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <p><h2>SOCIAL MEDIA'S</h2></p>
+        </div>
+        <div class="row">
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-american-sign-language-interpreting"></i></a>
+        </div>
+
+        
+
+        <div class="row">
+          Copyright © 2023 AISU
+        </div>
+        <div class="row">
+
+          <img class="aligncenter wp-image-805" src="https://aisu4india.in/wp-content/uploads/2023/06/AISU-1-300x169.png" alt="" width="216" height="122">
+          
+        </div>
+      </div>
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./addpost.js"></script>
+</body>
+</html>
